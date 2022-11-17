@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import SwipeableViews from "react-swipeable-views";
 import {autoPlay} from "react-swipeable-views-utils";
-
+import Lottie from "react-lottie-player";
+import lottieJson from "../../animation/about-us.json";
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 import {MainContentBox} from "./AboutUsStyles";
 import {CgClose} from "react-icons/cg";
@@ -53,11 +54,16 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className="xl:w-5/12 p-8 md:w-full flex justify-center ">
-                    <img
+                    {/* <img
                         alt="undraw_video_upload_3d4u 1.png"
                         src="/images/undraw_video_upload_3d4u 1.png"
                         className="cursor-pointer md:max-w-[500px] md:max-h-[400px] "
                         onClick={() => setShowModal(true)}
+                    /> */}
+                    <Lottie
+                        animationData={lottieJson}
+                        play
+                        // className="xl:w-9/12 max-w-[500px] max-h-[500px]"
                     />
                 </div>
                 <div className="relative md:block xl:hidden pb-12">

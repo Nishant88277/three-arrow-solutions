@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie-player";
-import lottieJson from "../../animation/lf20_fjv8qxqn.json";
+import lottieJson from "../../animation/hero.json";
 import {HeadingSection, Button} from "./HeroStyles";
 
 const Hero = () => {
