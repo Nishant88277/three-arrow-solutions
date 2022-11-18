@@ -2,21 +2,21 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-
-import { NavLink, SocialIcons, Span } from "./HeaderStyles";
+import { NavLink, SocialIcons, HeaderContainer } from "./HeaderStyles";
 import { RiMenu4Fill } from "react-icons/ri";
 import Nav from "./nav";
+import WebsiteLogo from "../WebsiteLogo/WebsiteLogo";
 
-const Header = ({ SelectedTheme }) => {
+const Header = () => {
   const { systemTheme, theme, setTheme } = useTheme("undefined");
   const [navWidth, setNavWidth] = useState("hidden");
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { pathname } = useRouter();
-  const currentTheme = theme === "system" ? systemTheme : theme;
+
+  const [currentTheme, setCurrentTheme] = useState("");
+  // const currentTheme = theme === "system" ? systemTheme : theme;
 
   const renderThemeChanger = () => {
     const currentTheme1 = theme === "system" ? systemTheme : theme;
-    SelectedTheme && SelectedTheme(currentTheme1);
     if (currentTheme1 === "dark") {
       return (
         <img
@@ -39,6 +39,10 @@ const Header = ({ SelectedTheme }) => {
   };
 
   useEffect(() => {
+    setCurrentTheme(theme);
+  }, [theme]);
+
+  useEffect(() => {
     document.body.classList.remove("overflow-hidden");
   }, []);
 
@@ -52,15 +56,31 @@ const Header = ({ SelectedTheme }) => {
     }
   };
 
+  /* Change color on scroll  */
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  };
+  
+  useEffect(()=>{
+    document.addEventListener("scroll", changeNavbarColor); 
+  })
+
   return (
     <>
-      <div className="container mx-auto mt-5">
+      <HeaderContainer
+        currentTheme={currentTheme}
+        colorChange={colorChange}
+        className={`container mx-auto pt-5 pb-2 sticky top-0`}
+      >
         <div className="flex justify-between ">
           <Link href="/">
             <NavLink className="flex items-center font-bold ">
-              <Span className="ml-2 mt-2 text-black dark:text-white">
-                Tech stagers
-              </Span>
+              <WebsiteLogo />
             </NavLink>
           </Link>
           {pathname !== "/404" && (
@@ -78,9 +98,13 @@ const Header = ({ SelectedTheme }) => {
             </div>
           )}
         </div>
-      </div>
+      </HeaderContainer>
       {navWidth === "block" && (
-        <Nav currentTheme={currentTheme} handleModal={(e) => handleModal(e)} />
+        <Nav
+          currentTheme={currentTheme}
+          colorChange={colorChange}
+          handleModal={(e) => handleModal(e)}
+        />
       )}
     </>
   );

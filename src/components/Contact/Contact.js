@@ -107,17 +107,17 @@ const Contact = () => {
                 <Icondiv>
                   <IoIosCall />
                 </Icondiv>
-                <span className="ml-10 text-xl">+91 1234567890</span>
+                <span className="ml-10 text-2xl">+91 1234567890</span>
               </div>
               <div className="flex mb-9">
                 <IcondivGradient className="font-bold ">@</IcondivGradient>
-                <span className="ml-10 text-xl">contact@threearrow.in</span>
+                <span className="ml-10 text-2xl">contact@threearrow.in</span>
               </div>
               <div className="flex">
                 <Icondiv>
                   <ImLocation />
                 </Icondiv>
-                <span className="ml-10 text-xl w-full leading-relaxed ">
+                <span className="ml-10 text-2xl w-full leading-relaxed ">
                   6 ff, EF tower, Shreeji Gold, nr. C.K prajapati school,
                   Laxmipura Rd, opp. Sona and Bandhan party plot, Subhanpura,
                   Vadodara, Gujarat 390003, India
@@ -141,9 +141,10 @@ const Contact = () => {
                       name="name"
                       value={state.name}
                       onChange={handleInput}
-                      className="bg-slate-100 w-32"
+                      onFocus={(e) => (e.target.placeholder = "")}
+                      onBlur={(e) => (e.target.placeholder = "your name")}
+                      className="bg-slate-100 w-32 outline-none font-semibold"
                       placeholder="your name"
-                      
                     ></input>
                   </Icondiv>{" "}
                   and my e-mail address is
@@ -154,9 +155,10 @@ const Contact = () => {
                       name="email"
                       value={state.email}
                       onChange={handleInput}
-                      className="bg-slate-100 w-36 "
+                      onFocus={(e) => (e.target.placeholder = "")}
+                      onBlur={(e) => (e.target.placeholder = "your email")}
+                      className="bg-slate-100 w-36 outline-none font-semibold"
                       placeholder="your email"
-                      
                     ></input>
                   </Icondiv>{" "}
                   and I would like to discuss about
@@ -167,7 +169,9 @@ const Contact = () => {
                       name="project"
                       value={state.project}
                       onChange={handleInput}
-                      className="bg-slate-100 w-36  "
+                      onFocus={(e) => (e.target.placeholder = "")}
+                      onBlur={(e) => (e.target.placeholder = "this project")}
+                      className="bg-slate-100 w-36 outline-none font-semibold"
                       placeholder="this project."
                     ></input>
                   </Icondiv>

@@ -11,13 +11,16 @@ import Marquee from "react-fast-marquee";
 const OurService = () => {
   return (
     <div className="container mx-auto">
-      <div className="xl:mt-52 mt-20 xl:p-0 px-5">
+      <div className="xl:mt-44 mt-20 xl:p-0 px-5">
         <HeadingTitle TextCenter="center">Our Service</HeadingTitle>
 
         <Marquee direction="right" speed={50} delay={5} pauseOnHover>
           {data.services.map((item, index) => {
             return (
-              <Section key={index} className="  flex text-center scrollbar-hide overflow-x-scroll text-gray-500 font-extrabold  py-20">
+              <Section
+                key={index}
+                className="  flex text-center scrollbar-hide overflow-x-scroll text-gray-500 font-extrabold  py-20"
+              >
                 <div
                   key={index}
                   className="xl:mx-20 mx-8 cursor-pointer transition-all delay-300 dark:hover:text-white hover:text-black Services_div "
@@ -40,7 +43,7 @@ const OurService = () => {
             <BsArrowRight className="text-5xl" />
           </div>
         </div>
-        <TalkExpertBox className="xl:flex md:flex-none md:mx-5 xl:mx-0 justify-center xl:mt-32 my-20 dark:text-black text-white rounded-3xl ">
+        <TalkExpertBox className="xl:flex md:flex-none md:mx-5 xl:mx-0 justify-center xl:mt-36 my-20 dark:text-black text-white rounded-3xl ">
           <div className="xl:p-16 p-10">
             <h4 className="leading-relaxed">Let's Discuss Your Project</h4>
             <p className="font-extrabold text-4xl  leading-normal">

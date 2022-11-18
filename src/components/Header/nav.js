@@ -1,5 +1,12 @@
-import React from "react";
-import { CareerBox, HeadingSection, List, NavLink, Span } from "./HeaderStyles";
+import React, { useEffect, useState } from "react";
+import {
+  CareerBox,
+  HeaderContainer,
+  HeadingSection,
+  List,
+  NavLink,
+  Span,
+} from "./HeaderStyles";
 import Link from "next/link";
 import { RiCloseFill } from "react-icons/ri";
 import { BsArrowRight, BsChatSquareText } from "react-icons/bs";
@@ -8,22 +15,27 @@ import Lottie from "react-lottie-player";
 import lottieJson from "../../animation/HeaderNavImage.json";
 import { data } from "../../header_data";
 import { Container } from "../../layout/LayoutStyles";
+import WebsiteLogo from "../WebsiteLogo/WebsiteLogo";
 
-function Nav({ currentTheme, handleModal }) {
+function Nav({ currentTheme, colorChange, handleModal }) {
+
+
   return (
     <>
       <Container>
         <div
-          className={`h-full w-full dark:bg-[#040C18] bg-white fixed z-10 top-0 left-0 overflow-y-auto CloseNav`}
+          className={`h-full w-full dark:bg-[#040C18] bg-white fixed z-50 top-0 left-0 overflow-y-auto CloseNav`}
         >
           <div className="xl:mx-32 md:mx-36   xl:py-8 py-5 mx-5">
-            <div className="flex Header_nav">
+            <HeaderContainer
+              currentTheme={currentTheme}
+              colorChange={colorChange}
+              className="flex Header_nav sticky top-0 z-100"
+            >
               <NavLink className="flex items-center justify-between w-full font-bold ">
                 <Link href="/">
                   <div className="flex">
-                    <Span className="ml-2 mt-2 text-black dark:text-white">
-                      Tech stagers
-                    </Span>
+                    <WebsiteLogo />
                   </div>
                 </Link>
                 <Span className="CloseNav" onClick={() => handleModal()}>
@@ -43,20 +55,24 @@ function Nav({ currentTheme, handleModal }) {
                   <span className="font-light text-5xl dark:text-white text-black" />
                 </Span>
               </NavLink>
-            </div>
+            </HeaderContainer>
             <div className="mt-20">
               <CareerBox className="flex md:flex-row flex-col mt-7 py-10 xl:px-10 px-10 justify-between rounded-xl xl:items-center mb-20 Carrer_div">
                 <div className="md:w-[20%]">
-                  <h4 className="text-black text-4xl leading-normal font-extrabold">
+                  <h4 className="dark:text-black text-white text-4xl leading-normal font-extrabold">
                     Looking for career opportunity?
                   </h4>
                 </div>
-                <div className="xl:w-[20%] xl:mt-0 mt-3 text-black gap-5 leading-loose">
+                <div className="xl:w-[20%] xl:mt-0 mt-3 dark:text-black text-white gap-5 leading-loose">
                   <div className="flex justify-between">
                     <div className="flex  items-center font-bold">
                       <BsChatSquareText /> <span className="ml-2">Email</span>
                     </div>
-                    <div className="w-[70%]"> contact@threearrow.in</div>
+                    <div className="w-[70%]">
+                      <a href="mailto:contact@threearrow.in">
+                        contact@threearrow.in
+                      </a>
+                    </div>
                   </div>
                   <div className="flex justify-between ">
                     <span className="flex w-[20%] items-center  font-bold">
@@ -67,10 +83,10 @@ function Nav({ currentTheme, handleModal }) {
                 </div>
                 <div className="md:w-1/5 md:mt-0 mt-3 flex xl:justify-end xl:mt-0 mt-12 items-center">
                   <div
-                    className="bg-black flex justify-around rounded-full p-2 w-80 cursor-pointer delay-75 duration-700
-                                                    transition-all text-white hover:bg-white hover:text-black"
+                    className="bg-white flex justify-around rounded-full p-2 w-80 cursor-pointer delay-75 duration-700
+                                                    transition-all text-black hover:bg-black hover:text-white dark:bg-black dark:text-white dark:hover:bg-white dark:hover:text-black"
                   >
-                    <button className="font-extrabold">Explore more</button>
+                    <button className="font-extrabold ">Explore more</button>
                     <BsArrowRight className="text-5xl" />
                   </div>
                 </div>

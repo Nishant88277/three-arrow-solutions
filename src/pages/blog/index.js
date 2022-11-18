@@ -19,13 +19,13 @@ export const index = () => {
         <Blog/>
         <div className="">
         <SubscribeCard/>
-        <div className="col-span-3 row-span-2 gap-y-28  gap-x-28 flex justify-center flex-wrap  ">
+        <div className="md:grid grid-cols-10 gap-y-28 gap-x-28 justify-center flex-wrap  ">
           {data.blogs.map((item, index) => {
             if (index !== 0)
               return (
                 <div
                   key={index}
-                  className="xl:w-2/5  sm:w-full m-5 md:w-2/5 xl:mb-0 mb-10 bg-[#042C54] Rest_blog "
+                  className="col-span-5 md:col-span-5 sm:w-full m-5 xl:mb-0 mb-10 bg-[#042C54] Rest_blog "
                 >
                   <div
                     className="xl:max-w-fit flex flex-col"
