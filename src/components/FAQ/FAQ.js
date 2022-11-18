@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { HeadingSection, Span, Title, Res } from "./FAQStyles";
 import { data } from "../../data";
-import TwoSection from "../../components/TwoSection/TwoSection";
 import Accordion from "./Accordian";
 import { Container } from "../../layout/LayoutStyles";
 const FAQ = ({ theme, multiple = false }) => {
@@ -112,7 +111,6 @@ const FAQ = ({ theme, multiple = false }) => {
             </div>
           </Res>
           <div>
-            <TwoSection />
           </div>
         </div>
       </div>

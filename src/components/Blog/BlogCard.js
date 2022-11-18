@@ -7,7 +7,7 @@ const BlogCard = ({data, index}) => {
   if(index === 0){
     return (
       <div
-        className={`bg-[#042C54] text-white flex flex-col  h-full ${
+        className={`bg-[#042C54] text-white flex flex-col h-full ${
           index === 0
             ? "md:row-span-1 md:col-span-5 xl:row-span-2 xl:col-span-4"
             : ""

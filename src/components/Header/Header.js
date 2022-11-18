@@ -13,7 +13,6 @@ const Header = () => {
   const { pathname } = useRouter();
 
   const [currentTheme, setCurrentTheme] = useState("");
-  // const currentTheme = theme === "system" ? systemTheme : theme;
 
   const renderThemeChanger = () => {
     const currentTheme1 = theme === "system" ? systemTheme : theme;
@@ -75,12 +74,12 @@ const Header = () => {
       <HeaderContainer
         currentTheme={currentTheme}
         colorChange={colorChange}
-        className={`container mx-auto pt-5 pb-2 sticky top-0`}
+        className={`container pt-10 pb-5 sticky top-0`}
       >
         <div className="flex justify-between ">
           <Link href="/">
             <NavLink className="flex items-center font-bold ">
-              <WebsiteLogo />
+              <WebsiteLogo type="nav" />
             </NavLink>
           </Link>
           {pathname !== "/404" && (

@@ -1,13 +1,25 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { useTheme } from "next-themes";
-import { Span } from "./WebsiteStyles";
 
-const WebsiteLogo = () => {
+const WebsiteLogo = ({type}) => {
   const { theme } = useTheme();
+  const [currentTheme, setCurrentTheme] = useState("");
+
+  useEffect(() => {
+    setCurrentTheme(theme);
+  }, [theme]);
+
+  const source = () => {
+    if(currentTheme !== "dark"){
+      return "/images/LogoBlack.svg"
+    } else {
+      return "/images/LogoWhite.svg"
+    }
+  }
 
   return (
     <div>
-      <Span className="ml-2 mt-2 text-black dark:text-white">Tech stagers</Span>
+      <img src={type !== "nav" ? "/images/LogoWhite.svg" : source()} alt="logo" width={type !== "nav" ? "150" : "100"} />
     </div>
   );
 };

@@ -41,10 +41,10 @@ function App() {
   };
 
   return (
-    <div className=" mx-auto">
+    <div className="mx-auto mr-0 pr-0">
       <StyledFormWrapper className="">
-        <StyledForm onSubmit={handleSubmit}>
-          <h1 className="dark:text-white text-black font-weight-bold">
+        <StyledForm onSubmit={handleSubmit} className='bg-white'>
+          <h1 className="text-black font-weight-bold">
             For Project Inquiries
           </h1>
           <div className="flex justify-center xl:flex-row flex-col">

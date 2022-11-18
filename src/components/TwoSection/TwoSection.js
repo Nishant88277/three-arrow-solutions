@@ -3,8 +3,8 @@ import { SecondSec } from "./TwoSectionStyles";
 
 const TwoSection = () => {
   return (
-    <div className="container mx-auto">
-      <div className="flex justify-center xl:flex-row flex-col xl:mt-52  mx-0 mt-20 text-white xl:p-0 ">
+    <div className="container mb-[80px]">
+      <div className="flex justify-center xl:flex-row flex-col mt-20 mx-0 text-white xl:p-0 ">
         <div className="xl:w-3/6 bg-[#313a5a] xl:px-28 px-10 py-20">
           <h1 className="xl:text-4xl text-3xl">
             Can't find a service you are looking for?

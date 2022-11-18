@@ -106,24 +106,6 @@ export const Wrapper = styled.div`
   grid-template-rows: 1fr;
 `;
 
-export const HeadingSection = styled.h1`
-  background: linear-gradient(
-    89.97deg,
-    var(--gradient-two) 1.84%,
-    var(--gradient-one) 102.67%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-`;
-
-export const CareerBox = styled.div`
-  background: linear-gradient(
-    90deg,
-    var(--gradient-one) 14.5%,
-    var(--gradient-two) 88.12%
-  );
-`;
-
 export const List = styled.li`
   :hover {
     ::before {
