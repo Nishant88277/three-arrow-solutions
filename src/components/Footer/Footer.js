@@ -1,17 +1,17 @@
 import React from "react";
 import { HeadingSection } from "./FooterStyles";
-import { SiAirchina } from "react-icons/si";
 import Link from "next/dist/client/link";
+import WebsiteLogo from "../WebsiteLogo/WebsiteLogo";
 
 const Footer = () => {
   return (
-    <div className="xl:mt-0 mt-0 bg-[#031B34] sm:overflow-hidden md:px-10 xl:px-0 px-0 text-white">
+    <div className=" xl:mt-[88px] mt-0 bg-[#031B34] sm:overflow-hidden md:px-10 xl:px-0 px-0 text-white">
       <div className="container mx-auto">
         <div className="xl:hidden items-center font-bold flex justify-center pt-8 List_item">
-          <span className="ml-2 mt-2">Tech stagers</span>
+          <WebsiteLogo />
         </div>
         <div className="xl:px-96 xl:py-10 px-5">
-          <HeadingSection className=" font-extrabold xl:text-7xl text-6xl xl:text-center text-left leading-tight tracking-wide py-3 Footer_head">
+          <HeadingSection className=" font-extrabold text-4xl xl:text-7xl md:text-6xl xl:text-center text-center leading-tight tracking-wide py-3 Footer_head">
             We are just few steps away to help you grow in this digital world.
           </HeadingSection>
         </div>
@@ -23,9 +23,9 @@ const Footer = () => {
         <div>
           <div className="flex py-28 flex-wrap gap-y-10 mx-auto px-5">
             <div className="xl:flex items-center font-bold w-2/5 pl-52 hidden ">
-              <span className="ml-2 mt-2">Tech stagers</span>
+              <span className="ml-2 mt-2"><WebsiteLogo /></span>
             </div>
-            <div className="xl:w-1/5 w-1/2">
+            <div className="xl:w-1/5 w-1/2 flex justify-center">
               <ul className="leading-relaxed">
                 <li className="my-6 List_item font-extrabold mb-10">
                   <a href="#">Links</a>
@@ -41,7 +41,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="xl:w-1/5 w-1/2">
+            <div className="xl:w-1/5 w-1/2 flex justify-center">
               <ul className="leading-relaxed">
                 <li className="my-6 List_item font-extrabold mb-10">
                   <a href="#">Company</a>
@@ -67,7 +67,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="xl:w-1/5 w-1/2">
+            <div className="xl:w-1/5 w-2/3 mx-auto flex justify-center">
               <ul className="leading-relaxed">
                 <li className="my-6 List_item font-extrabold mb-10">
                   <a href="#">Get in touch</a>

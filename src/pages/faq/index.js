@@ -24,7 +24,7 @@ const index = () => {
 
             ) : (
                 <> 
-                <Header SelectedTheme={(e) => SetTheme(e)}/>
+                <Header />
                     <div className="container mx-auto">
                         <div className="xl:px-20">
                            

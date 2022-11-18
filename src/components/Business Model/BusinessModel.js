@@ -9,7 +9,7 @@ const BusinessModel = () => {
                 <HeadingTitle TextCenter="center" className="Title_div">
                     Business Model
                 </HeadingTitle>
-                <div className="xl:flex justify-between xl:mt-28 mt-10 Nav_div">
+                <div className="xl:flex justify-between xl:mt-14 mt-10 Nav_div">
                     <NavSlideBar/>
                 </div>
             </div>

@@ -10,7 +10,7 @@ const Carousel = () => {
 
     return (
         <div className="container mx-auto">
-            <div className="xl:mt-52 mt-20 relative md:mx-5 mx-0 xl:p-0 px-5 Carousel_container">
+            <div className="xl:mt-32 mt-20 relative md:mx-5 mx-0 xl:p-0 px-5 Carousel_container">
                 <AutoPlaySwipeableViews
                     index={index}
                     onChangeIndex={setIndex}

@@ -58,7 +58,9 @@ const NavSlideBar = () => {
                 <h1 className="text-3xl leading-relaxed font-bold">
                   {item.Heading}
                 </h1>
-                <p className="text-2xl leading-normal">{item.Content}</p>
+                <p className="text-2xl max-w-[500px] leading-normal">
+                  {item.Content}
+                </p>
               </div>
             );
           })}
