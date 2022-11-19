@@ -17,7 +17,7 @@ import { AiOutlineLink } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="xl:mt-[88px] mt-0 bg-[#031B34] sm:overflow-hidden md:px-10 xl:px-0 px-0 text-white">
+    <div className="mt-0 bg-[#031B34] sm:overflow-hidden md:px-10 xl:px-0 px-0 text-white">
       <div className="container mx-auto">
         <div className="xl:hidden items-center font-bold flex justify-center pt-8 List_item">
           <WebsiteLogo />

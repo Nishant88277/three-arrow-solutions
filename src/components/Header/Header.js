@@ -74,7 +74,7 @@ const Header = () => {
       <HeaderContainer
         currentTheme={currentTheme}
         colorChange={colorChange}
-        className={`pt-10 pb-5 sticky top-0`}
+        className={`pt-10 pb-5 sticky top-0 container`}
       >
         <div className="flex justify-between ">
           <Link href="/">
@@ -84,10 +84,10 @@ const Header = () => {
           </Link>
           {pathname !== "/404" && (
             <div className="flex">
-              <SocialIcons className=" dark:hover:bg-[#212d45] hover:bg-[#fff] ">
+              <SocialIcons>
                 {renderThemeChanger()}
               </SocialIcons>
-              <SocialIcons className="dark:hover:bg-[#212d45] hover:bg-[#fff]">
+              <SocialIcons>
                 <RiMenu4Fill
                   id="MenuOpen"
                   className="text-black dark:text-white"

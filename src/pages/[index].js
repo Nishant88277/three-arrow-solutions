@@ -5,7 +5,7 @@ import TwoSections from "../components/TwoSection/TwoSection"
 import EnquiryForm from "../components/ Enquiry form/ enquiryForm";
 import MeetUs from "../components/MeetUs/meetUs";
 import DetailsText from "../components/DetailsText.js/detailsText";
-import TalkExpertCard from "../components/TalkExpertCard/talkExpertCard";
+import { TalkExpertBox } from "../components/TalkExpertBox/TalkExpertBox";
 import CompanyProgressCard from "../components/CompanyProgressNoCard/companyProgressCard";
 import TextBulletopt from "../components/TextBulletOpt/textBulletOpt";
 import DetailHero from "../components/DetailHero/detailHero";
@@ -94,17 +94,17 @@ const index = ({ detail }) => {
     <>
       <div className="h-full w-full dark:bg-[#040C18] bg-white ">
         <DetailHero detail={detail} />
-        <div className="container mt-[80px]">
+        <div className="container py-[80px]">
           <div className="flex justify-center xl:flex-row flex-col xl:mt-0 md:mx-0 mt-0 xl:p-0 px-0 mb-[80px]">
             <TextBulletopt />
             <EnquiryForm />
           </div>
           <CompanyProgressCard />
-          <TalkExpertCard />
+          <TalkExpertBox />
           <DetailsText />
           <TwoSections />
           <Blog />
-          <div className="flex justify-center xl:flex-row flex-col xl:mt-0 mb-5 md:mx-5 mx-0 mt-0  xl:p-0 px-5">
+          <div className="flex justify-center xl:flex-row flex-col xl:mt-0 md:mx-5 mx-0 mt-0  xl:p-0 px-5">
             <MeetUs />
             <EnquiryForm />
           </div>

@@ -1,10 +1,10 @@
 import React from "react";
 import { SecondSec } from "./TwoSectionStyles";
 
-const TwoSection = () => {
+const TwoSection = ({space}) => {
   return (
   
-      <div className="flex justify-center xl:flex-row flex-col text-white">
+      <div className={`flex justify-center xl:flex-row flex-col text-white ${space}`}>
         <div className="xl:w-3/6 bg-[#313a5a] xl:px-28 px-10 py-20">
           <h1 className="xl:text-4xl text-3xl">
             Can't find a service you are looking for?

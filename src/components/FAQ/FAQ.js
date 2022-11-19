@@ -1,120 +1,32 @@
-import React, { useRef, useEffect, useState } from "react";
-import { HeadingSection, Span, Title, Res } from "./FAQStyles";
+import React, { useState } from "react";
+import { Title } from "./FAQStyles";
 import { data } from "../../data";
-import Accordion from "./Accordian";
-import { Container } from "../../layout/LayoutStyles";
-const FAQ = ({ theme, multiple = false }) => {
-  const [activeItemIndex, setActiveItemIndex] = useState(null);
-  const [FAQType, setFAQType] = useState("Development");
-  const [active, setActive] = useState("");
+import Link from "next/link";
+import TwoSection from "../TwoSection/TwoSection";
+const FAQ = () => {
 
   return (
-    <Container>
-      <div className="container mx-auto">
-        <Title className=" font-extrabold xl:text-7xl text-5xl xl:text-center text-left leading-tight tracking-wide py-3 Footer_head mt-20 ">
-          Frequently Asked Questions
-        </Title>
-        <div className="mt-32 ">
-          <Res className=" flex flex-col sm:flex-col  lg:flex-row xl:flex-row md:flex-row ">
-            <div className="">
-              <div className=" xl:mr-6 xl:w-96 lg:w-96 md:w-96 mr-5 ">
-                {FAQType === "Development" ? (
-                  <HeadingSection className=" font-extrabold text-4xl leading-tight tracking-wide Footer_head mb-8">
-                    <div
-                      onClick={() => {
-                        setFAQType("Development");
-                        setActiveItemIndex(null);
-                      }}
-                    >
-                      Development
-                    </div>
-                  </HeadingSection>
-                ) : (
-                  <Span>
-                    <div
-                      className="text-black dark:text-white font-extrabold text-4xl mb-8"
-                      onClick={() => {
-                        setFAQType("Development");
-                        setActiveItemIndex(null);
-                      }}
-                    >
-                      Development
-                    </div>
-                  </Span>
-                )}
-
-                {FAQType === "Business" ? (
-                  <HeadingSection className=" font-extrabold text-4xl  leading-tight tracking-wide Footer_head mb-8">
-                    <div
-                      onClick={() => {
-                        setFAQType("Business");
-                        setActiveItemIndex(null);
-                      }}
-                    >
-                      Business
-                    </div>
-                  </HeadingSection>
-                ) : (
-                  <Span>
-                    <div
-                      className="text-black dark:text-white font-extrabold text-4xl mb-8"
-                      onClick={() => {
-                        setFAQType("Business");
-                        setActiveItemIndex(null);
-                      }}
-                    >
-                      Business
-                    </div>
-                  </Span>
-                )}
-                {FAQType === "Hire" ? (
-                  <HeadingSection className=" font-extrabold text-4xl  leading-tight tracking-wide Footer_head mb-8">
-                    <div
-                      onClick={() => {
-                        setFAQType("Hire");
-                        setActiveItemIndex(null);
-                      }}
-                    >
-                      Hire
-                    </div>
-                  </HeadingSection>
-                ) : (
-                  <Span>
-                    <div
-                      className="text-black dark:text-white font-extrabold text-4xl mb-8 "
-                      onClick={() => {
-                        setFAQType("Hire");
-                        setActiveItemIndex(null);
-                      }}
-                    >
-                      Hire
-                    </div>
-                  </Span>
-                )}
+    <div className="mt-16">
+      <Title className="font-extrabold xl:text-7xl xl:leading-tight tracking-tighter py-4 ">
+            Frequently Asked Questions
+      </Title>
+      <p className="xl:text-3xl text-1xl xl:leading-normal dark:text-[#81AFDD] text-black w-6/12 mb-20">
+        Everything you need to know about the product and billing. Can't find the answer you are looking for? Please <Link href='contact'><span className="underline">contact us.</span></Link>
+      </p>
+      <div className="grid grid-cols-3 gap-20 my-20">
+        {
+          data.FAQ.Development.map((item, index) => {
+            return(
+              <div key={index}>
+                <h2 className="font-bold mb-3 text-white">{item.question}</h2>
+                <p className="">{item.answer}</p>
               </div>
-            </div>
-            <div className="accordion ">
-              {data.FAQ[FAQType].map(({ question, answer }, index) => (
-                <div>
-                  <Accordion
-                    key={index}
-                    title={question}
-                    content={answer}
-                    active={active === index}
-                    onToggle={(e) =>
-                      setActive((a) => (a === index ? "" : index))
-                    }
-                    multiple={false}
-                  />
-                </div>
-              ))}
-            </div>
-          </Res>
-          <div>
-          </div>
-        </div>
+            )
+          })
+        }
       </div>
-    </Container>
+      <TwoSection space="mt-20 mb-32"/>
+    </div>
   );
 };
 
