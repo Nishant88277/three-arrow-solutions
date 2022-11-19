@@ -23,12 +23,16 @@ const Footer = () => {
         <div>
           <div className="flex py-28 flex-wrap gap-y-10 mx-auto px-5">
             <div className="xl:flex items-center font-bold w-2/5 pl-52 hidden ">
-              <span className="ml-2 mt-2"><WebsiteLogo /></span>
+              <span className="ml-2 mt-2">
+                <WebsiteLogo />
+              </span>
             </div>
             <div className="xl:w-1/5 w-1/2 flex justify-center">
               <ul className="leading-relaxed">
                 <li className="my-6 List_item font-extrabold mb-10">
-                  <a href="#">Links</a>
+                  <a className="cursor-default" href="#">
+                    Links
+                  </a>
                 </li>
                 <li className="my-6 List_item">
                   <a href="#">Overons</a>
@@ -44,7 +48,9 @@ const Footer = () => {
             <div className="xl:w-1/5 w-1/2 flex justify-center">
               <ul className="leading-relaxed">
                 <li className="my-6 List_item font-extrabold mb-10">
-                  <a href="#">Company</a>
+                  <a className="cursor-default" href="#">
+                    Company
+                  </a>
                 </li>
                 <li className="my-6 List_item">
                   <a href="#">Terms & Conditions</a>
@@ -70,27 +76,31 @@ const Footer = () => {
             <div className="xl:w-1/5 w-2/3 mx-auto flex justify-center">
               <ul className="leading-relaxed">
                 <li className="my-6 List_item font-extrabold mb-10">
-                  <a href="#">Get in touch</a>
+                  <a href="#" className="cursor-default">
+                    Get in touch
+                  </a>
                 </li>
                 <li className="my-6 List_item mb-10">
-                  <a href="#">
+                  <a href="#" className="cursor-default">
                     6 ff, EF tower, Shreeji Gold, nr. C.K prajapati school,
                     Laxmipura Rd, opp. Sona and Bandhan party plot, Subhanpura,
                     Vadodara, Gujarat 390003, India
                   </a>
                 </li>
                 <li className="my-6 List_item mb-10">
-                  <div className="cursor-pointer flex mb-5">
-                    <img src="/images/IN.png" alt="" className="w-10" /> +91
-                    9913781537{" "}
+                  <div className="flex mb-5">
+                    <img src="/images/IN.png" alt="" className="w-10" /> &nbsp;
+                    +91 9913781537{" "}
                   </div>
-                  <div className="cursor-pointer flex">
-                    <img src="/images/us-flag.png" alt="" className="w-10" /> +1
-                    321-613-8080{" "}
+                  <div className="flex">
+                    <img src="/images/us-flag.png" alt="" className="w-10" />
+                    &nbsp; +1 321-613-8080{" "}
                   </div>
                 </li>
                 <li className="my-6 List_item">
-                  <a href="#">contact@threearrow.in</a>
+                  <a href="mailto:contact@threearrow.in">
+                    contact@threearrow.in
+                  </a>
                 </li>
               </ul>
             </div>

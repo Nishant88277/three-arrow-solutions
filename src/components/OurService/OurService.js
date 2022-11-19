@@ -36,11 +36,13 @@ const OurService = () => {
 
         <div className="mt-10 flex justify-center">
           <div
-            className="dark:text-white text-black border-black dark:border-white border-2 flex justify-around rounded-full p-2 w-80 cursor-pointer delay-75 duration-700
+            className="dark:text-white text-black border-black dark:border-white border-2 flex justify-around rounded-full p-2 py-[16px] w-[300px] cursor-pointer delay-75 duration-700
          transition-all dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white"
           >
-            <button className="font-extrabold">All Services</button>
-            <BsArrowRight className="text-5xl" />
+            <button className="font-extrabold">
+              All Services
+            </button>
+            <BsArrowRight className="text-5xl w-[32px]" />
           </div>
         </div>
         <TalkExpertBox className="xl:flex md:flex-none md:mx-5 xl:mx-0 justify-center xl:mt-36 my-20 dark:text-black text-white rounded-3xl ">

@@ -18,9 +18,9 @@ const AboutUs = () => {
             <HeadingTitle>Who we are</HeadingTitle>
             <div className="xl:flex mt-28  hidden">
               <div className="w-5/12">
-                <h3 className="text-white text-4xl leading-loose">
+                <h3 className="text-white text-4xl leading-loose font-bold">
                   <TextTopBorder SpacebtText="10px">Digi</TextTopBorder>
-                  tal Marketing
+                  tal&nbsp;Marketing
                 </h3>
                 <p className="mt-14 leading-relaxed">
                   We so opinion friends me message as delight. Whole front do of
@@ -30,9 +30,9 @@ const AboutUs = () => {
             </div>
             <div className="xl:flex justify-between  mt-36  hidden">
               <div className="w-5/12">
-                <h3 className="text-white text-4xl leading-loose">
+                <h3 className="text-white text-4xl leading-loose font-bold">
                   <TextTopBorder SpacebtText="10px">App</TextTopBorder>
-                  development
+                  &nbsp;Development
                 </h3>
                 <p className="mt-14 leading-relaxed">
                   At jointure ladyship an insisted so humanity he. Friendly
@@ -41,9 +41,9 @@ const AboutUs = () => {
                 </p>
               </div>
               <div className="w-5/12">
-                <h3 className="text-white text-4xl leading-loose">
+                <h3 className="text-white text-4xl leading-loose font-bold">
                   <TextTopBorder SpacebtText="10px">Web</TextTopBorder>site
-                  development
+                  &nbsp;Development
                 </h3>
                 <p className="mt-14 leading-relaxed">
                   At jointure ladyship an insisted so humanity he. Friendly
