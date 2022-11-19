@@ -154,7 +154,22 @@ export const LinkTitle = styled.h4`
   }
 `;
 export const HeadingSection = styled.h1`
-  background: linear-gradient(89.97deg, var(--gradient-one) 1.84%, var(--gradient-two) 102.67%);
+  background: linear-gradient(
+    89.97deg,
+    var(--gradient-one) 1.84%,
+    var(--gradient-two) 102.67%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+export const StyledTitle = styled.span`
+  letter-spacing: 1px;
+  font-size: 16px;
+  background: linear-gradient(
+    89.97deg,
+    var(--gradient-one) 1.84%,
+    var(--gradient-two) 102.67%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;

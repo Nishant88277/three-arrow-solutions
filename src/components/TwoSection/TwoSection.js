@@ -3,8 +3,8 @@ import { SecondSec } from "./TwoSectionStyles";
 
 const TwoSection = () => {
   return (
-    <div className="container mb-[80px]">
-      <div className="flex justify-center xl:flex-row flex-col mt-20 mx-0 text-white xl:p-0 ">
+  
+      <div className="flex justify-center xl:flex-row flex-col text-white">
         <div className="xl:w-3/6 bg-[#313a5a] xl:px-28 px-10 py-20">
           <h1 className="xl:text-4xl text-3xl">
             Can't find a service you are looking for?
@@ -30,7 +30,6 @@ const TwoSection = () => {
           </button>
         </SecondSec>
       </div>
-    </div>
   );
 };
 
