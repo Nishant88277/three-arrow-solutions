@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer/Footer";
 import Blog from "../components/Blog/Blog";
-import FAQ from "../components/FAQ/FAQ";
+import TwoSections from "../components/TwoSection/TwoSection"
 import EnquiryForm from "../components/ Enquiry form/ enquiryForm";
 import MeetUs from "../components/MeetUs/meetUs";
 import DetailsText from "../components/DetailsText.js/detailsText";
@@ -9,7 +9,6 @@ import TalkExpertCard from "../components/TalkExpertCard/talkExpertCard";
 import CompanyProgressCard from "../components/CompanyProgressNoCard/companyProgressCard";
 import TextBulletopt from "../components/TextBulletOpt/textBulletOpt";
 import DetailHero from "../components/DetailHero/detailHero";
-import { Container } from "../layout/LayoutStyles";
 import { data } from "../header_data";
 
 export const getStaticPaths = () => {
@@ -95,22 +94,21 @@ const index = ({ detail }) => {
     <>
       <div className="h-full w-full dark:bg-[#040C18] bg-white ">
         <DetailHero detail={detail} />
-
-        <Container>
-          <div className="flex justify-center xl:flex-row flex-col xl:mt-0 md:mx-0 mt-0  xl:p-0 px-0">
+        <div className="container mt-[80px]">
+          <div className="flex justify-center xl:flex-row flex-col xl:mt-0 md:mx-0 mt-0 xl:p-0 px-0 mb-[80px]">
             <TextBulletopt />
             <EnquiryForm />
           </div>
           <CompanyProgressCard />
           <TalkExpertCard />
           <DetailsText />
-          <FAQ />
+          <TwoSections />
           <Blog />
           <div className="flex justify-center xl:flex-row flex-col xl:mt-0 mb-5 md:mx-5 mx-0 mt-0  xl:p-0 px-5">
             <MeetUs />
             <EnquiryForm />
           </div>
-        </Container>
+        </div>
       </div>
       <Footer />
     </>

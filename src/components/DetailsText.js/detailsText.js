@@ -2,7 +2,7 @@ import React from "react";
 
 const DetailsText = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mb-[80px]">
       <div>
         <h1 className="Git_text  dark:text-white text-black font-black xl:text-6xl text-4xl leading-normal ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In

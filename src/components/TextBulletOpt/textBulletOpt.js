@@ -4,8 +4,8 @@ import { List } from "../Header/HeaderStyles";
 
 const TextBulletopt = () => {
   return (
-    <div className="xl:w-[54%] container mx-auto mt-5 ">
-      <h1 className="  dark:text-white text-black font-black xl:text-6xl text-4xl leading-normal ">
+    <div className="xl:w-[54%] container mx-auto mt-5 ml-0 pl-0">
+      <h1 className="dark:text-white text-black font-black xl:text-6xl text-4xl leading-normal ">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </h1>
       <p className="Git_text xl:text-4xl py-4 dark:text-[#fff] text-black leading-normal ">

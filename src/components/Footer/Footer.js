@@ -2,6 +2,7 @@ import React from "react";
 import { HeadingSection } from "./FooterStyles";
 import Link from "next/dist/client/link";
 import WebsiteLogo from "../WebsiteLogo/WebsiteLogo";
+import Career from "../CareerBox/CareerBox"
 
 const Footer = () => {
   return (
@@ -21,7 +22,7 @@ const Footer = () => {
           </button>
         </div>
         <div>
-          <div className="flex py-28 flex-wrap gap-y-10 mx-auto px-5">
+          <div className="flex py-20 flex-wrap gap-y-10 mx-auto px-5">
             <div className="xl:flex items-center font-bold w-2/5 pl-52 hidden ">
               <span className="ml-2 mt-2">
                 <WebsiteLogo />
@@ -60,7 +61,7 @@ const Footer = () => {
                 </li>
 
                 <li className="my-6 List_item">
-                  <Link href="/work">Work</Link>
+                  <Link href="/portfolio">Work</Link>
                 </li>
                 <li className="my-6 List_item">
                   <Link href="/faq">FAQ</Link>
@@ -106,6 +107,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <Career space={"mb-20"}/>
       </div>
       <div className="border-t-2 text-center p-10 border-[#BCC0CF] xl:text-2xl text-sm">
         © 2021 All rights reserved.

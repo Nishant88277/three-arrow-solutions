@@ -34,24 +34,24 @@ const MeetUs = () => {
         </MeetUsStyle>
         <div className="mt-24">
           <div className="flex mb-9">
-            <Icondiv>
+            <Icondiv className="text-4xl">
               <IoIosCall />
             </Icondiv>
-            <span className="ml-10 text-xl dark:text-[#fff] text-black">
+            <span className="ml-10 text-4xl dark:text-[#fff] text-black">
               +91 1234567890
             </span>
           </div>
           <div className="flex mb-9">
-            <IcondivGradient className="font-bold ">@</IcondivGradient>
-            <span className="ml-10 text-xl dark:text-[#fff] text-black">
+            <IcondivGradient className="font-bold text-4xl">@</IcondivGradient>
+            <span className="ml-10 text-4xl dark:text-[#fff] text-black">
               contact@threearrow.in
             </span>
           </div>
           <div className="flex">
             <Icondiv>
-              <ImLocation />
+              <ImLocation className="text-4xl" />
             </Icondiv>
-            <span className="ml-10 text-xl w-full leading-relaxed dark:text-[#fff] text-black">
+            <span className="ml-10 text-4xl w-full leading-relaxed dark:text-[#fff] text-black">
               6 ff, EF tower, Shreeji Gold, nr. C.K prajapati school, Laxmipura
               Rd, opp. Sona and Bandhan party plot, Subhanpura, Vadodara,
               Gujarat 390003, India

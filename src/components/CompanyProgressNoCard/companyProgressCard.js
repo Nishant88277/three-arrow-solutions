@@ -36,7 +36,7 @@ const BoldH1 = styled.div`
 
 const CompanyProgressCard = () => {
   return (
-    <Cards className="container mx-auto">
+    <Cards className="container mb-[80px]">
       <div>
         <BoldH1>200+</BoldH1>
         <SmallPara className="text-2xl  xl:text-5xl dark:text-[#fff] text-black leading-normal">
