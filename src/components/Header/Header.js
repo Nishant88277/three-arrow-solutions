@@ -74,7 +74,7 @@ const Header = () => {
       <HeaderContainer
         currentTheme={currentTheme}
         colorChange={colorChange}
-        className={`container pt-10 pb-5 sticky top-0`}
+        className={`pt-10 pb-5 sticky top-0`}
       >
         <div className="flex justify-between ">
           <Link href="/">

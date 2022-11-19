@@ -12,15 +12,15 @@ const AboutUs = () => {
     const [index, setIndex] = useState(0);
     const [showModal, setShowModal] = React.useState(false);
     return (
-      <div className="container mx-auto lg:h-[800px] overflow-hidden">
-        <MainContentBox className="xl:p-20 p-10 gs_reveal xl:mt-52 mt-20 xl:mx-0 md:mx-5 xl:flex">
+      <div className=" lg:h-[695px] ">
+        <MainContentBox className="h-full xl:p-20 p-10 gs_reveal xl:flex">
           <div className="xl:w-7/12 md:w-full xl:p-0">
             <HeadingTitle>Who we are</HeadingTitle>
             <div className="xl:flex mt-28  hidden">
               <div className="w-5/12">
-                <h3 className="text-white text-4xl leading-loose">
+                <h3 className="text-white text-4xl leading-loose font-bold">
                   <TextTopBorder SpacebtText="10px">Digi</TextTopBorder>
-                  tal Marketing
+                  tal&nbsp;Marketing
                 </h3>
                 <p className="mt-14 leading-relaxed">
                   We so opinion friends me message as delight. Whole front do of
@@ -30,9 +30,9 @@ const AboutUs = () => {
             </div>
             <div className="xl:flex justify-between  mt-36  hidden">
               <div className="w-5/12">
-                <h3 className="text-white text-4xl leading-loose">
+                <h3 className="text-white text-4xl leading-loose font-bold">
                   <TextTopBorder SpacebtText="10px">App</TextTopBorder>
-                  development
+                  &nbsp;Development
                 </h3>
                 <p className="mt-14 leading-relaxed">
                   At jointure ladyship an insisted so humanity he. Friendly
@@ -41,9 +41,9 @@ const AboutUs = () => {
                 </p>
               </div>
               <div className="w-5/12">
-                <h3 className="text-white text-4xl leading-loose">
+                <h3 className="text-white text-4xl leading-loose font-bold">
                   <TextTopBorder SpacebtText="10px">Web</TextTopBorder>site
-                  development
+                  &nbsp;Development
                 </h3>
                 <p className="mt-14 leading-relaxed">
                   At jointure ladyship an insisted so humanity he. Friendly
@@ -53,7 +53,7 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="xl:w-5/12 p-8 md:w-full flex justify-center xl:translate-y-[-60px]">
+          <div className="xl:w-5/12 p-8 md:w-full flex justify-center xl:translate-x-[60px]">
             {/* <img
                         alt="undraw_video_upload_3d4u 1.png"
                         src="/images/undraw_video_upload_3d4u 1.png"

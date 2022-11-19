@@ -10,11 +10,7 @@ export const Label = styled.label`
 @media screen and (min-width: 90px) and (max-width: 680px) {
   line-height: 20px;
   font-size: 15px;
-
-}
-
-
-`;
+}`;
 
 export const sharedStyles = css`
   background-color: #eee;
@@ -37,9 +33,7 @@ export const StyledFormWrapper = styled.div`
 
 export const StyledForm = styled.form`
   width: 100%;
-
   padding: 40px;
-  dark:text-white text-black
   border-radius: 10px;
   box-sizing: border-box;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);

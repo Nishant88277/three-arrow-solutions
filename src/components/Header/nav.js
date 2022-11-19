@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  HeaderContainer,
-  List,
-  NavLink,
-  Span,
-} from "./HeaderStyles";
+import { List, Span, StyledTitle } from "./HeaderStyles";
 import Link from "next/link";
 import { RiCloseFill } from "react-icons/ri";
 import { data } from "../../header_data";
@@ -17,7 +12,7 @@ function Nav({ currentTheme, handleModal }) {
     <>
       <Container>
         <div
-          className={`h-full w-full dark:bg-[#040C18] bg-white fixed z-50 top-0 left-0 overflow-y-auto CloseNav`}
+          className="h-full w-full dark:bg-[#040C18] bg-white fixed z-50 top-0 left-0 overflow-y-auto CloseNav font-medium"
         >
           <div className="container xl:py-8 py-5">
             <Span className="CloseNav fixed top-10 right-20" onClick={() => handleModal()}>
@@ -36,9 +31,9 @@ function Nav({ currentTheme, handleModal }) {
                 <div className="xl:mx-0 mx-5 grid xl:mt-5 mt-20 md:grid-cols-3  gap-8 dark:text-white text-black text-lg ">
                   <div className="flex flex-col">
                     <div>
-                      <h5 className="font-bold text-3xl xl:mb-5 mb-16">
+                      <StyledTitle className="font-bold text-3xl xl:mb-5 mb-16">
                         Mobile App Development
-                      </h5>
+                      </StyledTitle>
                       <ol className="text-2xl mt-10">
                         {data.mobile_app_development.map((item, index) => {
                           return (
@@ -48,7 +43,7 @@ function Nav({ currentTheme, handleModal }) {
                             >
                               <List
                                 onClick={() => handleModal()}
-                                className="relative mb-5 cursor-pointer hover:duration-100 transition-all px-16 before:ml-8 before:absolute before:-left-4 before:bottom-1
+                                className="relative mb-5 cursor-pointer hover:duration-100 hover:font-bold transition-all px-16 before:ml-8 before:absolute before:-left-4 before:bottom-1
                     before:border-2 before:border-solid before:rounded-full before:contents:(' ') before:w-5
                     before:h-5"
                               >
@@ -60,9 +55,9 @@ function Nav({ currentTheme, handleModal }) {
                       </ol>
                     </div>
                     <div className="mt-16">
-                      <h5 className="font-bold text-3xl xl:mb-5 mb-16 mt-3">
+                      <StyledTitle className="font-bold text-3xl xl:mb-5 mb-16 mt-3">
                         Web Development
-                      </h5>
+                      </StyledTitle>
                       <ol className="text-2xl mt-10">
                         {data.web_development.map((item, index) => {
                           return (
@@ -85,9 +80,9 @@ function Nav({ currentTheme, handleModal }) {
                     </div>
                   </div>
                   <div className="row-span-2">
-                    <h5 className="font-bold text-3xl xl:mb-5 mb-16">
+                    <StyledTitle className="font-bold text-3xl xl:mb-5 mb-16">
                       Enterprise Mobility Solutions
-                    </h5>
+                    </StyledTitle>
                     <ol className="text-2xl mt-10">
                       {data.enterprise_mobility_solutions.map((item, index) => {
                         return (
@@ -110,9 +105,9 @@ function Nav({ currentTheme, handleModal }) {
                   </div>
                   <div className="flex flex-col">
                     <div>
-                      <h5 className="font-bold text-3xl xl:mb-5 mb-16">
+                      <StyledTitle className="font-bold text-3xl xl:mb-5 mb-16">
                         Hire Dedicated Developers
-                      </h5>
+                      </StyledTitle>
                       <ol className="text-2xl mt-10">
                         {data.dedicated_developers.map((item, index) => {
                           return (
@@ -135,9 +130,9 @@ function Nav({ currentTheme, handleModal }) {
                     </div>
 
                     <div className="mt-16">
-                      <h5 className="font-bold text-3xl xl:mb-3 mb-16 mt-2">
+                      <StyledTitle className="font-bold text-3xl xl:mb-3 mb-16 mt-2">
                         About Us
-                      </h5>
+                      </StyledTitle>
                       <ol className="text-2xl mt-10">
                         {data.about_us.map((item, index) => {
                           return (

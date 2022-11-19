@@ -1,12 +1,23 @@
 import React from "react";
-import { HeadingSection } from "./FooterStyles";
+import { HeadingSection, StyledTitle } from "./FooterStyles";
 import Link from "next/dist/client/link";
 import WebsiteLogo from "../WebsiteLogo/WebsiteLogo";
-import Career from "../CareerBox/CareerBox"
+import Career from "../CareerBox/CareerBox";
+/* React Icons */
+import { IoNewspaperOutline, IoShareSocialOutline } from "react-icons/io5";
+import { MdOutlinePrivacyTip, MdWorkOutline } from "react-icons/md";
+import { FaBlogger, FaChromecast, FaCreativeCommons, FaQuestionCircle, FaRegAddressCard } from "react-icons/fa";
+import { IoMdContact } from "react-icons/io";
+import { BiBuilding } from "react-icons/bi";
+import { BsQuestionCircle } from "react-icons/bs";
+import { GrBlog, GrCafeteria, GrContact } from "react-icons/gr";
+import { CgWebsite } from "react-icons/cg";
+import { RiContactsBook2Line } from "react-icons/ri";
+import { AiOutlineLink } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className=" xl:mt-[88px] mt-0 bg-[#031B34] sm:overflow-hidden md:px-10 xl:px-0 px-0 text-white">
+    <div className="xl:mt-[88px] mt-0 bg-[#031B34] sm:overflow-hidden md:px-10 xl:px-0 px-0 text-white">
       <div className="container mx-auto">
         <div className="xl:hidden items-center font-bold flex justify-center pt-8 List_item">
           <WebsiteLogo />
@@ -22,84 +33,98 @@ const Footer = () => {
           </button>
         </div>
         <div>
-          <div className="flex py-20 flex-wrap gap-y-10 mx-auto px-5">
-            <div className="xl:flex items-center font-bold w-2/5 pl-52 hidden ">
-              <span className="ml-2 mt-2"><WebsiteLogo /></span>
+          <div className=" grid grid-cols-12 my-[48px] font-medium">
+            <div className="xl:flex justify-center items-start font-bold hidden col-span-5 ">
+              <WebsiteLogo />
             </div>
-            <div className="xl:w-1/5 w-1/2 flex justify-center">
+            <div className="flex justify-center col-span-6 md:col-span-2">
               <ul className="leading-relaxed">
-                <li className="my-6 List_item font-extrabold mb-10">
-                  <a href="#">Links</a>
+                <li className="my-6 List_item font-extrabold mb-10 flex items-center gap-[8px]">
+                  <StyledTitle>&nbsp;Links</StyledTitle>
                 </li>
-                <li className="my-6 List_item">
-                  <a href="#">Overons</a>
+                <li className="my-6 List_item flex items-center gap-[8px]">
+                  <FaChromecast />
+                  <a href="#">&nbsp;Overons</a>
                 </li>
-                <li className="my-6 List_item">
-                  <a href="#">Social Media</a>
+                <li className="my-6 List_item flex items-center gap-[8px]">
+                  <IoShareSocialOutline />
+                  <a href="#">&nbsp;Social Media</a>
                 </li>
-                <li className="my-6 List_item">
-                  <a href="#">Counters</a>
+                <li className="my-6 List_item flex items-center gap-[8px]">
+                  <FaCreativeCommons />
+                  <a href="#">&nbsp;Counters</a>
                 </li>
               </ul>
             </div>
-            <div className="xl:w-1/5 w-1/2 flex justify-center">
+            <div className="flex justify-center col-span-6 md:col-span-2 mr-[40px]">
               <ul className="leading-relaxed">
-                <li className="my-6 List_item font-extrabold mb-10">
-                  <a href="#">Company</a>
+                <li className="my-6 List_item font-extrabold mb-10 flex items-center gap-[8px]">
+                  <StyledTitle>Company</StyledTitle>
                 </li>
-                <li className="my-6 List_item">
-                  <a href="#">Terms & Conditions</a>
+                <li className="my-6 List_item flex items-center gap-[8px]">
+                  <IoNewspaperOutline />
+                  <a href="#">&nbsp;Terms & Conditions</a>
                 </li>
-                <li className="my-6 List_item">
-                  <a href="#">Privacy Policy</a>
+                <li className="my-6 List_item flex items-center gap-[8px]">
+                  <MdOutlinePrivacyTip />
+                  <a href="#">&nbsp;Privacy Policy</a>
                 </li>
 
-                <li className="my-6 List_item">
-                  <Link href="/portfolio">Work</Link>
+                <li className="my-6 List_item flex items-center gap-[8px]">
+                  <MdWorkOutline />
+                  <Link href="/portfolio">&nbsp;Work</Link>
                 </li>
-                <li className="my-6 List_item">
-                  <Link href="/faq">FAQ</Link>
+
+                <li className="my-6 List_item flex items-center gap-[8px]">
+                  <BsQuestionCircle />
+                  <Link href="/faq">&nbsp;FAQ</Link>
                 </li>
-                <li className="my-6 List_item">
-                  <Link href="/blog">Blog</Link>
+                <li className="my-6 List_item flex items-center gap-[8px]">
+                  <CgWebsite />
+                  <Link href="/blog">&nbsp;Blog</Link>
                 </li>
-                <li className="my-6 List_item">
-                  <Link href="/contact">Contact us</Link>
+                <li className="my-6 List_item flex items-center gap-[8px]">
+                  <RiContactsBook2Line />
+                  <Link href="/contact">&nbsp;Contact us</Link>
                 </li>
               </ul>
             </div>
-            <div className="xl:w-1/5 w-2/3 mx-auto flex justify-center">
-              <ul className="leading-relaxed">
+            <div className="w-full col-span-12 md:col-span-3">
+              <ul className="leading-relaxed flex flex-col justify-center items-center md:items-start">
                 <li className="my-6 List_item font-extrabold mb-10">
-                  <a href="#">Get in touch</a>
+                  <StyledTitle>&nbsp;Get in touch</StyledTitle>
+                </li>
+                <li className="List_item mb-10 flex justify-center">
+                  <span className="text-center md:text-left">
+                    6 FF, EF tower, Shreeji Gold, <br /> nr. C.K prajapati
+                    school, Laxmipura Rd, <br /> opp. Sona and Bandhan party
+                    plot, <br /> Subhanpura, Vadodara, <br /> Gujarat - 390003,
+                    &nbsp;
+                    <StyledTitle>India</StyledTitle>
+                  </span>
                 </li>
                 <li className="my-6 List_item mb-10">
-                  <a href="#">
-                    6 ff, EF tower, Shreeji Gold, nr. C.K prajapati school,
-                    Laxmipura Rd, opp. Sona and Bandhan party plot, Subhanpura,
-                    Vadodara, Gujarat 390003, India
+                  <div className="flex mb-5">
+                    <img src="/images/IN.png" alt="" className="w-10" /> &nbsp;
+                    +91 9913781537{" "}
+                  </div>
+                  <div className="flex">
+                    <img src="/images/us-flag.png" alt="" className="w-10" />
+                    &nbsp; +1 321-613-8080{" "}
+                  </div>
+                </li>
+                {/* <li className="my-6 List_item">
+                  <a href="mailto:contact@threearrow.in">
+                    contact@threearrow.in
                   </a>
-                </li>
-                <li className="my-6 List_item mb-10">
-                  <div className="cursor-pointer flex mb-5">
-                    <img src="/images/IN.png" alt="" className="w-10" /> +91
-                    9913781537{" "}
-                  </div>
-                  <div className="cursor-pointer flex">
-                    <img src="/images/us-flag.png" alt="" className="w-10" /> +1
-                    321-613-8080{" "}
-                  </div>
-                </li>
-                <li className="my-6 List_item">
-                  <a href="#">contact@threearrow.in</a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
         </div>
-        <Career space={"mb-20"}/>
+        <Career space={"mb-20"} />
       </div>
-      <div className="border-t-2 text-center p-10 border-[#BCC0CF] xl:text-2xl text-sm">
+      <div className="border-t-2 text-center p-5 border-[#BCC0CF] xl:text-2xl text-sm font-bold">
         © 2021 All rights reserved.
       </div>
     </div>

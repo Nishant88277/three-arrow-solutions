@@ -4,8 +4,7 @@ import {HeadingTitle} from "../../styles/GlobalComponents";
 
 const BusinessModel = () => {
     return (
-        <div className="container mx-auto">
-            <div className="xl:mt-52 mt-20 md:mx-5 mx-0 xl:p-0 px-5 Main_model">
+            <div className="Main_model">
                 <HeadingTitle TextCenter="center" className="Title_div">
                     Business Model
                 </HeadingTitle>
@@ -13,7 +12,6 @@ const BusinessModel = () => {
                     <NavSlideBar/>
                 </div>
             </div>
-        </div>
     );
 };
 
