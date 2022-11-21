@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import {
   Label,
-  StyledFormWrapper,
   StyledForm,
   StyledInput,
   StyledTextArea,
   StyledError,
 } from "./enquiryFormStyle";
 import { Buttondiv } from "../Contact/ContactStyle";
+import InputField from "./InputField";
 
 const initalState = {
   firstName: "",
@@ -41,70 +41,82 @@ function App() {
   };
 
   return (
-    <div className="mx-auto mr-0 pr-0">
-      <StyledFormWrapper className="">
-        <StyledForm onSubmit={handleSubmit} className='bg-white'>
-          <h1 className="text-black font-weight-bold">
-            For Project Inquiries
-          </h1>
-          <div className="flex justify-center xl:flex-row flex-col">
-            <div className="xl:mr-8">
-              <Label htmlFor="name"> First Name</Label>
-              <StyledInput
-                type="text"
-                name="firstName"
-                value={state.firstName}
-                onChange={handleInput}
-                placeholder="Type First Name"
-              />
-            </div>
-            <div>
-              <Label htmlFor="name">Last Name</Label>
-              <StyledInput
-                type="text"
-                name="lastName"
-                value={state.lastName}
-                onChange={handleInput}
-                placeholder="Type Last Name"
-              />
-            </div>
-          </div>
-          <Label htmlFor="email">Email</Label>
-          <StyledInput
-            type="email"
-            name="email"
-            value={state.email}
+    <div className="box-border mt-[32px] xl:mt-0">
+      <StyledForm onSubmit={handleSubmit} className="bg-white">
+        <h1 className="text-black text-[28px] font-medium m-0 mb-[27px]">
+          For Project Inquiries
+        </h1>
+
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-x-[22px] gap-y-[27px]">
+          <InputField
+            variant="input"
+            label="First Name"
+            type="text"
+            name="firstName"
+            value={state.firstName}
             onChange={handleInput}
-            placeholder="Type Email"
-          />
-          <Label htmlFor="phoneNumber">Phone Number</Label>
-          <StyledInput
-            type="number"
-            name="phoneNumber"
-            value={state.phoneNumber}
-            onChange={handleInput}
-            placeholder="Type Phone Number"
+            placeholder="Type First Name"
           />
 
-          <Label htmlFor="message">Message</Label>
-          <StyledTextArea
-            name="message"
-            value={state.message}
+          <InputField
+            variant="input"
+            label="Last Name"
+            type="text"
+            name="lastName"
+            value={state.lastName}
             onChange={handleInput}
+            placeholder="Type Last Name"
           />
-          {error && (
-            <StyledError>
-              <p>{error}</p>
-            </StyledError>
-          )}
-          <Buttondiv
-            type="submit"
-            className="mt-10 text-white py-5 px-14 transition-all duration-700 delay-75"
-          >
-            Send
-          </Buttondiv>
-        </StyledForm>
-      </StyledFormWrapper>
+
+          <div className="col-span-2">
+            <InputField
+              variant="input"
+              label="Email"
+              type="email"
+              name="email"
+              value={state.email}
+              onChange={handleInput}
+              placeholder="Type Email"
+            />
+          </div>
+
+          <div className="col-span-2">
+            <InputField
+              variant="input"
+              label="Phone Number"
+              type="tel"
+              name="phoneNumber"
+              value={state.phoneNumber}
+              onChange={handleInput}
+              placeholder="Type Phone Number"
+            />
+          </div>
+
+          <div className="col-span-2">
+            <InputField
+              variant="textArea"
+              label="Message"
+              type="text"
+              name="message"
+              value={state.message}
+              onChange={handleInput}
+              placeholder="Enter Your Message"
+            />
+          </div>
+        </div>
+
+        {error && (
+          <StyledError>
+            <p>{error}</p>
+          </StyledError>
+        )}
+        <Buttondiv
+          type="submit"
+          className="mt-[34px] text-white py-5 px-14 transition-all duration-700 delay-75"
+        >
+          Send
+        </Buttondiv>
+      </StyledForm>
     </div>
   );
 }

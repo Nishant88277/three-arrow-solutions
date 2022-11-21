@@ -4,7 +4,7 @@ import { Container } from "../../layout/LayoutStyles";
 import Header from "../Header/Header";
 
 export const Wrap = styled.div`
-width-100%;
+width:100%;
 background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
 
 

@@ -316,7 +316,7 @@ export const HeadingTitle = styled.h1`
   font-family: "Manrope";
   font-style: normal;
   font-weight: 800;
-  font-size: 34px;
+  font-size: 36px;
   line-height: 45px;
   text-align: ${(props) => props.TextCenter};
   background: ${(props) =>

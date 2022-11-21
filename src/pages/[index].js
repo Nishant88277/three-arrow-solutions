@@ -104,7 +104,7 @@ const index = ({ detail }) => {
           <DetailsText />
           <TwoSections />
           <Blog />
-          <div className="flex justify-center xl:flex-row flex-col xl:mt-0 md:mx-5 mx-0 mt-0  xl:p-0 px-5">
+          <div className="flex justify-center xl:flex-row flex-col xl:mt-[80px] md:mx-5 mx-0 mt-10  xl:p-0 px-5">
             <MeetUs />
             <EnquiryForm />
           </div>

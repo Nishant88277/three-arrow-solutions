@@ -21,7 +21,7 @@ const GitHubSection = () => {
             <TextTopBorder SpacebtText="5px">Ut id</TextTopBorder> tincidunt
             libero tincidunt
           </div>
-          <div className="Git_text xl:w-2/3 text-2xl dark:text-[#81AFDD] text-black leading-normal xl:px-24">
+          <div className="Git_text xl:w-2/3 dark:text-[#81AFDD] text-black leading-normal xl:px-24">
             Curabitur vulputate dui dui, vel rutrum odio semper et. Cras non
             erat tempus, ornare enim nec, commodo eros. Pellentesque.
           </div>
@@ -31,7 +31,7 @@ const GitHubSection = () => {
             <TextTopBorder SpacebtText="5px">Ut id</TextTopBorder> tincidunt
             libero tincidunt
           </div>
-          <div className="Git_text xl:w-2/3 text-2xl dark:text-[#81AFDD] text-black leading-normal xl:px-24">
+          <div className="Git_text xl:w-2/3 dark:text-[#81AFDD] text-black leading-normal xl:px-24">
             Curabitur vulputate dui dui, vel rutrum odio semper et. Cras non
             erat tempus, ornare enim nec, commodo eros. Pellentesque.
           </div>
@@ -41,7 +41,7 @@ const GitHubSection = () => {
             <TextTopBorder SpacebtText="5px">Ut id</TextTopBorder> tincidunt
             libero tincidunt
           </div>
-          <div className="Git_text xl:w-2/3 text-2xl dark:text-[#81AFDD] text-black leading-normal xl:px-24">
+          <div className="Git_text xl:w-2/3 dark:text-[#81AFDD] text-black leading-normal xl:px-24">
             Curabitur vulputate dui dui, vel rutrum odio semper et. Cras non
             erat tempus, ornare enim nec, commodo eros. Pellentesque.
           </div>

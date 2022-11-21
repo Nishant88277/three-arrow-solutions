@@ -28,7 +28,7 @@ const Footer = () => {
           </HeadingSection>
         </div>
         <div className="flex justify-center">
-          <button className="border-2 px-20 py-6 transition-all delay-100 duration-700  rounded-full  hover:text-black hover:bg-white">
+          <button className="border-2 px-20 py-6 transition-all delay-100 duration-700  rounded-full  hover:text-black hover:bg-white font-bold">
             Let's discuss
           </button>
         </div>

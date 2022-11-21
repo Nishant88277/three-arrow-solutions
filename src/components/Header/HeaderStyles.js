@@ -92,14 +92,14 @@ export const SocialIcons = styled.span`
 
 export const HeaderDiv = styled.div`
   position: absoluete;
-  widht: 100%;
+  width: 100%;
   height: 70px;
   z-index: 99;
 `;
 export const Wrapper = styled.div`
   position: relative;
   padding: 0px 24px;
-  widht: 100%;
+  width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: 50% 50%;

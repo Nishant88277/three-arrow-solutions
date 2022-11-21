@@ -26,13 +26,15 @@ const Carousel = () => {
                   <h2 className="xl:text-5xl text-4xl font-extrabold xl:w-3/4 leading-tight">
                     {item.Heading}
                   </h2>
-                  <p className="xl:my-12 my-1 leading-normal">{item.Content}</p>
+                  <p className="xl:my-12 my-1 leading-normal font-medium">
+                    {item.Content}
+                  </p>
                   <div className=" flex justify-center xl:justify-start">
                     <button
                       className="bg-[#313A5A] xl:py-6 xl:px-24 py-5 px-16 rounded-full
                     my-14 xl:mx-0 mx-[15%] 
-                  transition-all delay-100 duration-700 text-xl 
-                   hover:text-white hover:bg-black"
+                  transition-all delay-100 duration-700
+                   hover:text-white hover:bg-black font-medium"
                     >
                       View Project
                     </button>

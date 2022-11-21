@@ -2,16 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 const SmallPara = styled.div`
-
-@media only screen and (max-width:580px){
-    justify-content:space-around;
-    font-size:8px
-
+  @media only screen and (max-width: 580px) {
+    justify-content: space-around;
+    font-size: 8px;
+  }
 `;
 const Cards = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 50px
+  margin-top: 50px;
 `;
 
 const BoldH1 = styled.div`
@@ -30,7 +29,6 @@ const BoldH1 = styled.div`
   }
   @media only screen and (max-width: 881px) {
     font-size: 42px;
-    
   }
 `;
 
