@@ -22,7 +22,7 @@ function Client() {
         </p>
       </div>
 
-      <Wrap className="xl:w-1/2 xl:mt-0 mt-10 ">
+      <Wrap className="xl:w-1/2 xl:mt-0">
         <div className="orbit  ">
           <div className="center-image ">
             <img src="/images/assets/woman.png" alt="" />
