@@ -12,8 +12,6 @@ const MeetUsStyle = styled.div`
   font-family: "Manrope";
   font-style: normal;
   font-weight: 800;
-  font-size: 62px;
-  line-height: 75px;
   /* identical to box height, or 121% */
 
   letter-spacing: -0.04em;
@@ -28,22 +26,24 @@ const MeetUsStyle = styled.div`
 const MeetUs = () => {
   return (
     <div className="xl:w-[50%]  text-white items-center flex justify-center transition-all duration-500 ">
-      <div className="w-[70%] xl:py-0 py-20">
-        <MeetUsStyle className="xl:text-7xl text-5xl mb-5 dark:text-[#fff] text-black">
+      <div className="xl:w-[70%] xl:py-0 py-20">
+        <MeetUsStyle className="xl:text-8xl text-7xl dark:text-[#fff] text-black">
           Meet Us
         </MeetUsStyle>
-        <div className="mt-24">
+        <div className="mt-[32px]">
           <div className="flex mb-9">
             <Icondiv className="text-4xl">
               <IoIosCall />
             </Icondiv>
-            <span className="ml-10 text-4xl dark:text-[#fff] text-black">
+            <span className="ml-10 text-3xl xl:text-4xl dark:text-[#fff] text-black">
               +91 1234567890
             </span>
           </div>
           <div className="flex mb-9">
-            <IcondivGradient className="font-bold text-4xl">@</IcondivGradient>
-            <span className="ml-10 text-4xl dark:text-[#fff] text-black">
+            <IcondivGradient className="text-4xl">
+              @
+            </IcondivGradient>
+            <span className="ml-10 text-3xl xl:text-4xl dark:text-[#fff] text-black">
               contact@threearrow.in
             </span>
           </div>
@@ -51,7 +51,7 @@ const MeetUs = () => {
             <Icondiv>
               <ImLocation className="text-4xl" />
             </Icondiv>
-            <span className="ml-10 text-4xl w-full leading-relaxed dark:text-[#fff] text-black">
+            <span className="ml-10 text-3xl xl:text-4xl w-full leading-relaxed dark:text-[#fff] text-black">
               6 ff, EF tower, Shreeji Gold, nr. C.K prajapati school, Laxmipura
               Rd, opp. Sona and Bandhan party plot, Subhanpura, Vadodara,
               Gujarat 390003, India

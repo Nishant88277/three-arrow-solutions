@@ -92,19 +92,23 @@ export const getStaticProps = (context) => {
 const index = ({ detail }) => {
   return (
     <>
-      <div className="h-full w-full dark:bg-[#040C18] bg-white ">
+      <div className="h-full w-full dark:bg-[#040C18] bg-white mb-[100px]">
         <DetailHero detail={detail} />
-        <div className="container py-[80px]">
-          <div className="flex justify-center xl:flex-row flex-col xl:mt-0 md:mx-0 mt-0 xl:p-0 px-0 mb-[80px]">
-            <TextBulletopt />
-            <EnquiryForm />
+        <div className="container py-[80px] flex flex-col gap-[50px] xl:mt-[50px] px-[16px] xl:px-0">
+          <div className="w-full flex justify-center xl:flex-row xl:justify-between flex-col gap-[16px] md:gap-[32px]">
+            <div className="basis-[50%]">
+              <TextBulletopt />
+            </div>
+            <div className="basis-[45%]">
+              <EnquiryForm />
+            </div>
           </div>
           <CompanyProgressCard />
           <TalkExpertBox />
           <DetailsText />
           <TwoSections />
           <Blog />
-          <div className="flex justify-center xl:flex-row flex-col xl:mt-0 md:mx-5 mx-0 mt-0  xl:p-0 px-5">
+          <div className="flex justify-center xl:flex-row flex-col xl:mt-[80px] md:mx-5 mx-0 mt-10  xl:p-0 px-5">
             <MeetUs />
             <EnquiryForm />
           </div>

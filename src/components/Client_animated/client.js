@@ -9,7 +9,7 @@ function Client() {
     <div className="flex justify-center items-center xl:flex-row flex-col">
       <div className="xl:w-1/2">
         <HeadingTitle className="Title_div">Clients</HeadingTitle>
-        <p className="dark:text-[#fff] text-black">
+        <p className="dark:text-[#fff] text-black text-[18px] tracking-wider font-medium">
           Aenean rutrum erat quis eleifend dignissim. Duis in sollicitudin nisi,
           ac dignissim libero. Phasellus viverra sagittis sapien sedinterdum.
           Fusce ex diam, fringilla commodo ante id, aliquet porta libero. Aenean
@@ -22,7 +22,7 @@ function Client() {
         </p>
       </div>
 
-      <Wrap className="xl:w-1/2 xl:mt-0 mt-10 ">
+      <Wrap className="xl:w-1/2 xl:mt-0">
         <div className="orbit  ">
           <div className="center-image ">
             <img src="/images/assets/woman.png" alt="" />

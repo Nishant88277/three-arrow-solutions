@@ -7,10 +7,11 @@ export const Label = styled.label`
   line-height: 50px;
   color: #a7a7a7;
 
-@media screen and (min-width: 90px) and (max-width: 680px) {
-  line-height: 20px;
-  font-size: 15px;
-}`;
+  @media screen and (min-width: 90px) and (max-width: 680px) {
+    line-height: 20px;
+    font-size: 15px;
+  }
+`;
 
 export const sharedStyles = css`
   background-color: #eee;
@@ -22,18 +23,10 @@ export const sharedStyles = css`
   box-sizing: border-box;
 `;
 
-export const StyledFormWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  margin-top: 50px;
-  border-radius: 10px;
-`;
 
 export const StyledForm = styled.form`
   width: 100%;
-  padding: 40px;
+  padding: 30px;
   border-radius: 10px;
   box-sizing: border-box;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
@@ -42,15 +35,42 @@ export const StyledForm = styled.form`
 export const StyledInput = styled.input`
   display: block;
   width: 100%;
-  ${sharedStyles}
+  background: #ffffff;
+  background-color: #ffffff;
+  padding-left: 14px;
+  font-weight: 600;
+
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
+  }
+
+  &::placeholder{
+    font-weight: 600;
+  }
 `;
 
 export const StyledTextArea = styled.textarea`
-  background-color: #eee;
+  display: block;
   width: 100%;
-  min-height: 100px;
+  height: 12rem;
+  background: #ffffff;
+  background-color: #ffffff;
+  padding-left: 14px;
+  font-weight: 600;
+  transform: translateY(6px);
   resize: none;
-  ${sharedStyles}
+
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
+  }
+
+  &::placeholder {
+    font-weight: 600;
+  }
 `;
 
 export const StyledError = styled.div`

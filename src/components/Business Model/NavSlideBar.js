@@ -18,7 +18,7 @@ const NavSlideBar = () => {
               <div
                 key={index}
                 onClick={() => SetIndex(index)}
-                className={`xl:w-3/12 `}
+                className={`xl:w-3/12 font-medium`}
               >
                 {item.Heading}
                 <span style={{ display: "none" }}>{count++}</span>
@@ -58,7 +58,7 @@ const NavSlideBar = () => {
                 <h1 className="text-3xl leading-relaxed font-bold">
                   {item.Heading}
                 </h1>
-                <p className="text-2xl max-w-[500px] leading-normal">
+                <p className="max-w-[500px] leading-normal font-medium">
                   {item.Content}
                 </p>
               </div>

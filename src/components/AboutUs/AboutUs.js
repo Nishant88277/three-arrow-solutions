@@ -34,7 +34,7 @@ const AboutUs = () => {
                   <TextTopBorder SpacebtText="10px">App</TextTopBorder>
                   &nbsp;Development
                 </h3>
-                <p className="mt-14 leading-relaxed">
+                <p className="mt-14 leading-relaxed ">
                   At jointure ladyship an insisted so humanity he. Friendly
                   bachelor entrance to on by. As put impossible own appartments
                   b.
