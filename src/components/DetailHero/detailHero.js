@@ -16,7 +16,7 @@ const DetaiHero = ({ detail }) => {
       <div className="text-white dark:text-white">
         <Header />
       </div>
-      <div className="container">
+      <div className="container px-[24px] xl:px-0">
         <h1 className="Git_text text-white xl:text-8xl leading-normal mb-0  py-0  ">
           {detail[0].text}
         </h1>
@@ -24,7 +24,7 @@ const DetaiHero = ({ detail }) => {
           COMPANY
         </h2>
 
-        <p className="Git_text mt-5 xl:mt-20 text-[#fff] xl:text-3xl leading-normal  mt-20  ">
+        <p className="Git_text xl:mt-20 text-[#fff] xl:text-4xl leading-normal font-medium mt-20">
           A combination of technologies that are used to develop web
           applications is known as a stack. MERN stack demand is increasing day
           by day because it is an open-source combination of technologies. This
@@ -35,8 +35,8 @@ const DetaiHero = ({ detail }) => {
         </p>
         <div className="flex items-center mt-16 dark:text-white text-black">
           <button
-            className="font-extrabold rounded-full dark:bg-black bg-white cursor-pointer delay-75 duration-700
-         transition-all dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white xl:px-16 xl:py-7 px-10 xl:m-0 m-6 py-1 xl:text-1xl text-xl px-10 py-7 mt-3"
+            className="font-semibold rounded-full dark:bg-black bg-white cursor-pointer delay-75 duration-700
+         transition-all dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white xl:px-16 xl:py-7 md:py-5 px-10 xl:m-0 m-6 py-4 xl:text-3xl text-2xl mt-3"
           >
             Talk to our Experts
           </button>

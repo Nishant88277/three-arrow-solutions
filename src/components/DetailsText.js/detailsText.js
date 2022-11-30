@@ -19,7 +19,7 @@ const DetailsText = () => {
           <h2 className="Git_text  dark:text-white text-black font-black xl:text-5xl text-4xl leading-normal">
             Lorem ipsum{" "}
           </h2>
-          <p className="Git_text  xl:text-4xl dark:text-[#fff] text-black leading-normal mt-20 ">
+          <p className="Git_text  xl:text-4xl dark:text-[#fff] text-black leading-normal mt-10 ">
             Nam nunc odio, semper ut sem non, mattis congue ligula. Ut ultricies
             odio non mattis feugiat. Nulla semper neque eget dui consectetur,
             nec pulvinar lectus mollis. Cras efficitur eros sed ipsum consequat,
@@ -29,7 +29,7 @@ const DetailsText = () => {
           <h2 className="Git_text  dark:text-white text-black font-black xl:text-5xl text-4xl leading-normal">
             Lorem ipsum{" "}
           </h2>
-          <p className="Git_text  xl:text-4xl dark:text-[#fff] text-black leading-normal mt-20">
+          <p className="Git_text  xl:text-4xl dark:text-[#fff] text-black leading-normal mt-10">
             Nam nunc odio, semper ut sem non, mattis congue ligula. Ut ultricies
             odio non mattis feugiat. Nulla semper neque eget dui consectetur,
             nec pulvinar lectus mollis. Cras efficitur eros sed ipsum consequat,

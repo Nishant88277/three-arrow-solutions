@@ -4,7 +4,7 @@ import styled from "styled-components";
 const SmallPara = styled.div`
   @media only screen and (max-width: 580px) {
     justify-content: space-around;
-    font-size: 8px;
+    font-size: 16px;
   }
 `;
 const Cards = styled.div`
@@ -34,22 +34,22 @@ const BoldH1 = styled.div`
 
 const CompanyProgressCard = () => {
   return (
-    <Cards className="container mb-[80px]">
+    <Cards className="container flex flex-col md:flex-row gap-[16px]">
       <div>
         <BoldH1>200+</BoldH1>
-        <SmallPara className="text-2xl  xl:text-5xl dark:text-[#fff] text-black leading-normal">
+        <SmallPara className=" xl:text-5xl dark:text-[#fff] text-black leading-normal">
           Professionals
         </SmallPara>
       </div>
       <div>
         <BoldH1>5+</BoldH1>
-        <SmallPara className=" text-2xl xl:text-4xl dark:text-[#fff] text-black leading-normal">
+        <SmallPara className=" text-4xl xl:text-4xl dark:text-[#fff] text-black leading-normal">
           Years of Average Experience
         </SmallPara>
       </div>
       <div>
         <BoldH1>500M+</BoldH1>
-        <SmallPara className=" text-2xl xl:text-4xl dark:text-[#fff] text-black leading-normal">
+        <SmallPara className=" text-4xl xl:text-4xl dark:text-[#fff] text-black leading-normal">
           Investment Received Clients
         </SmallPara>
       </div>

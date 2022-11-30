@@ -34,10 +34,10 @@ const Footer = () => {
         </div>
         <div>
           <div className=" grid grid-cols-12 my-[48px] font-medium">
-            <div className="xl:flex justify-center items-start font-bold hidden col-span-5 ">
+            <div className="xl:flex justify-center items-start font-bold hidden col-span-5 xl:col-span-3 ">
               <WebsiteLogo />
             </div>
-            <div className="flex justify-center col-span-6 md:col-span-2">
+            <div className="flex justify-center col-span-6 md:col-span-4 xl:col-span-3">
               <ul className="leading-relaxed">
                 <li className="my-6 List_item font-extrabold mb-10 flex items-center gap-[8px]">
                   <StyledTitle>&nbsp;Links</StyledTitle>
@@ -56,7 +56,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex justify-center col-span-6 md:col-span-2 mr-[40px]">
+            <div className="flex justify-center col-span-6 md:col-span-4 xl:col-span-3 mr-[40px]">
               <ul className="leading-relaxed">
                 <li className="my-6 List_item font-extrabold mb-10 flex items-center gap-[8px]">
                   <StyledTitle>Company</StyledTitle>
@@ -89,8 +89,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="w-full col-span-12 md:col-span-3">
-              <ul className="leading-relaxed flex flex-col justify-center items-center md:items-start">
+            <div className="w-full col-span-12 md:col-span-4 xl:col-span-3">
+              <ul className="leading-relaxed flex flex-col justify-center items-center md:items-start ">
                 <li className="my-6 List_item font-extrabold mb-10">
                   <StyledTitle>&nbsp;Get in touch</StyledTitle>
                 </li>

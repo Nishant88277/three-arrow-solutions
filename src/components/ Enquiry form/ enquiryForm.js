@@ -112,7 +112,7 @@ function App() {
         )}
         <Buttondiv
           type="submit"
-          className="mt-[34px] text-white py-5 px-14 transition-all duration-700 delay-75"
+          className="mt-[34px] text-white py-5 px-14 transition-all duration-700 delay-75 text-3xl font-semibold"
         >
           Send
         </Buttondiv>
